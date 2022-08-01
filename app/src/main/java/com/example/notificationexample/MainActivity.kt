@@ -1,6 +1,6 @@
 package com.example.notificationexample
 
-import android.annotation.SuppressLint
+
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -10,7 +10,6 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.app.NotificationCompat
-import androidx.core.content.getSystemService
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -48,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 "Details",
                 pendingIntent2).build()
 
-        val intent3 = Intent(this, SettingsActivty::class.java)
+        val intent3 = Intent(this, SettingsActivity::class.java)
         val pendingIntent3: PendingIntent = PendingIntent.getActivity(this,
                 0, intent3,
                 PendingIntent.FLAG_UPDATE_CURRENT)
